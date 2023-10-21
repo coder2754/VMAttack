@@ -1,1 +1,1 @@
-﻿namespace VMAttack.Core.Abstraction;
+﻿namespace VMAttack.Core.Abstraction {}
