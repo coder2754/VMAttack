@@ -27,6 +27,7 @@ jobs:
         git submodule update --init --recursive
         dotnet restore
         dotnet build 
+        dotnet publish -r netcoreapp3.1 --self-contained true
     - name: Create ZIP
       run: |
         Compress-Archive -Path src/VMAttack/bin/Debug/* -DestinationPath devm.zip
