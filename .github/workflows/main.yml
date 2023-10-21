@@ -25,7 +25,8 @@ jobs:
     - name: Build
       run: |
         git submodule update --init --recursive
-        nuget restore 
+        dotnet restore
+        dotnet build 
         msbuild /p:Configuration=Release /m /verbosity:normal /p:WarningLevel=0
     - name: Create ZIP
       run: |
