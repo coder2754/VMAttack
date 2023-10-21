@@ -29,7 +29,7 @@ jobs:
         dotnet build 
     - name: Create ZIP
       run: |
-        Compress-Archive -Path bin/Release/* -DestinationPath devm.zip
+        Compress-Archive -Path src/VMAttack/bin/Debug/* -DestinationPath devm.zip
         
     - name: Archive ViewDistanceTweaks
       uses: actions/upload-artifact@v2
